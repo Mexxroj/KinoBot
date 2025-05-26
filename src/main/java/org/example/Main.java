@@ -6,6 +6,7 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Salom Docker");
         KinoBot kinoBot = new KinoBot();
 
         try {

@@ -11,7 +11,7 @@ import java.util.*;
 
 public class KinoBot extends TelegramLongPollingBot {
 
-    private static final String BOT_TOKEN = "6962519555:AAEjpHen-BlzeJeIHSEGapVbwd5FJcoWY28";
+    private static final String BOT_TOKEN = "6962519555:AAGYCduYrwvCS4F1MK5ZRhNn983ceOTbltQ";
     private static final String BOT_USERNAME = "Raqamli_kinolarr_bot";
     private static final String KINO_CHANNEL_LINK = "https://t.me/kodsiz_kinolar/23";
 

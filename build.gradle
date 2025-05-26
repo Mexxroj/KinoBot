@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
 }
 
 group = 'org.example'
@@ -7,6 +8,12 @@ version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'org.example.Main'
+    }
 }
 
 dependencies {
@@ -17,4 +24,11 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+shadowJar {
+    // shadowJar yaratilganda, standart jar taskini bajarmaslik uchun
+    // uni main build lifecycle'dan o'chirishimiz mumkin,
+    // agar siz faqat shadowJar yaratmoqchi bo'lsangiz.
+    // ammo hozircha uni qoldiramiz va faqat shadowJar ni ishlatamiz.
 }
